@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCare Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="hero">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="hero-content"> -->
+        <!-- Hero Section -->
+        
+    <!-- </div> -->
+</header>
+
+<section id="hero" class="carousel">
+    <div class="carousel-slide active" style="background-image: url('/img/car1.png');">
+        <div class="carousel-content">
+            <h1>AutoCare Cars</h1>
+            <p>Top-speed, reliability, and quality service for your car.</p>
+            <button>Discover More</button>
+        </div>
+    </div>
+    <div class="carousel-slide" style="background-image: url('/img/car2.png');"></div>
+    <div class="carousel-slide" style="background-image: url('car3.jpg');"></div>
+</section>
+
+
+<!-- Services Section -->
+<section class="services">
+    <h2>We Provide Best Services</h2>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Our Best Workers</h3>
+            <p>We have highly trained professionals.</p>
+            <button>Read More</button>
+        </div>
+        <div class="card">
+            <h3>Fast Car Service</h3>
+            <p>Fast and reliable car service.</p>
+            <button>Read More</button>
+        </div>
+        <div class="card">
+            <h3>24x7 Service</h3>
+            <p>We are available 24/7 for emergencies.</p>
+            <button>Read More</button>
+        </div>
+        <div class="card">
+            <h3>Best Materials</h3>
+            <p>We use top-quality materials.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects">
+    <h2>Our Projects</h2>
+    <div class="project-gallery">
+        <img src="/img/img4.jpg" alt="Project 1">
+        <img src="/img/img7.jpg" alt="Project 2">
+        <img src="/img/img10.jpg" alt="Project 3">
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <div class="about-content">
+        <img src="/img/img1 (1).jpg" alt="About Us Image">
+        <div class="text-content">
+            <h2>We Are The Best</h2>
+            <p>We are a team of certified professionals.</p>
+            <ul>
+                <li>✅ Certified Technicians</li>
+                <li>✅ 24x7 Support</li>
+                <li>✅ Best Workers</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- What People Are Saying Section -->
+<section class="testimonial-section">
+    <h2>What People Are Saying</h2>
+    <p>There are many variations of passages of Lorem Ipsum available.</p>
+    <div class="testimonial-card">
+        <img src="/img/pic1 (2).jpg" alt="User Image">
+        <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
+        <h4>Maria Smith</h4>
+        <p>California</p>
+    </div>
+</section>
+
+<!-- Recent Blog Section -->
+<section class="recent-blog">
+    <h2>Recent Blog</h2>
+    <p>There are many variations of passages of Lorem Ipsum available.</p>
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="/img/pic1 (1).jpg" alt="Blog 1">
+            <h3>Facts That You Should Know About Car Service.</h3>
+        </div>
+        <div class="blog-card">
+            <img src="/img/pic2 (1).jpg" alt="Blog 2">
+            <h3>Here's What No One Tells You About Car Service.</h3>
+        </div>
+        <div class="blog-card">
+            <img src="/img/pic3 (1).jpg" alt="Blog 3">
+            <h3>The Truth About Car Service Is About To Be Revealed.</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Brand Logos Section -->
+<section class="brand-logos">
+    <div class="logo"><img src="/img/logo.png" alt="Logo 1"></div>
+    <div class="logo"><img src="/img/logo1.jpg" alt="Logo 2"></div>
+    <div class="logo"><img src="/img/logo2.jpg" alt="Logo 3"></div>
+    <div class="logo"><img src="/img/logo3.jpg" alt="Logo 4"></div>
+    <div class="logo"><img src="/img/logo4.jpg" alt="Logo 5"></div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <h3>Subscribe to Our Newsletter</h3>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </div>
+    <p>&copy; 2025 AutoCare. All rights reserved.</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const testimonials = document.querySelectorAll('.testimonial-container p');
+    let index = 0;
+
+    function showNextTestimonial() {
+        testimonials[index].style.display = 'none';
+        index = (index + 1) % testimonials.length;
+        testimonials[index].style.display = 'block';
+    }
+
+    setInterval(showNextTestimonial, 3000);  // Change testimonial every 3 seconds
+});
+
+</script>
+</body>
+</html>
